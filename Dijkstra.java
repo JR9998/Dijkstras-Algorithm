@@ -103,27 +103,7 @@ public class Dijkstra {
 	public void run () {
 		run(null);
 	}
-
-	/* 
-	 * 
-	 * algorithm dijkstra(G,s):
-  for all v in V do
-    dist[v] ← ∞
-    prev[v] = null
-
-  dist[s] ← 0
-
-  PQ ← makeQueue(V)
-
-  while PQ is not empty do
-    v ← PQ.removeMin()
-    for each incident edge e=(v,u) 
-      if dist[u] > dist[v]+w(v,u) then
-        dist[u] = dist[v]+w(v,u)
-        PQ.decreaseKey(u)
-        prev[u] = e               // was prev[u] = v
-	 */
-
+	
 	/**
 	 * Compute shortest path from vertex s to vertex f. Requires init(s) to have
 	 * been called first.
